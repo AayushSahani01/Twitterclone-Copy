@@ -4,9 +4,9 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
     domains: [
-      "pbs.twimg.com",
+      "avatars.githubusercontent.com"  
     ],
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

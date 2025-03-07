@@ -1,5 +1,3 @@
-
-import { Inter } from 'next/font/google'
 import FeedCard from '@/components/FeedCard/tweets';
 import React from 'react';
 import { FaXTwitter  } from "react-icons/fa6";
@@ -14,7 +12,6 @@ import { MdOutlineVerified } from "react-icons/md";
 import { ImPower } from "react-icons/im";
 import { FaRegUser } from "react-icons/fa6";
 import { CgMoreO } from "react-icons/cg";
-const inter = Inter({ subsets: ['latin'] });
 
 interface TwitterSidebarButton{
    title:string;
@@ -67,7 +64,7 @@ const sidebarMenu:TwitterSidebarButton[]=[
 ]
 export default function Home() {
   return (
-  <div >
+  <div>
    <div className='grid grid-cols-12 h-screen w-screen px-32'>
       <div className='col-span-3  border-slate-800   '>
       <FaXTwitter size={48}className='hover:bg-slate-800 rounded-full p-2 m-2 w-fit h-fit cursor-pointer'/>
@@ -88,8 +85,18 @@ export default function Home() {
       </div>
       </div>
       <div className='col-span-6 
-      border-r-[0.5px] border-l-[0.5px] border-slate-600'>
+      border-r-[0.5px] border-b-0 border-slate-600'>
        <FeedCard/>
+       <FeedCard/>
+       <FeedCard/>
+       <FeedCard/> 
+       <FeedCard/>
+       <FeedCard/>
+       <FeedCard/>
+       <FeedCard/>
+       <FeedCard/>
+       <FeedCard/>
+        
       </div>
       <div className='col-span-6  border-slate-600'> </div>
       <div className='col-span-3'> </div>
